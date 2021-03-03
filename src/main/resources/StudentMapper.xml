@@ -22,4 +22,8 @@
     <select id = "getAll" resultMap = "result">
         SELECT * FROM martin.STUDENT;
     </select>
+
+    <select id = "getById" parameterType = "int" resultMap = "result">
+        SELECT * FROM martin.STUDENT WHERE ID = #{id};
+    </select>
 </mapper>
